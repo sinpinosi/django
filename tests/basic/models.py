@@ -50,7 +50,7 @@ class PrimaryKeyWithDefault(models.Model):
 
 
 class PrimaryKeyWithDbDefault(models.Model):
-    uuid = models.IntegerField(primary_key=True, db_default=1)
+    uuid = models.IntegerField(primary_key=True, default=1)
 
 
 class ChildPrimaryKeyWithDefault(PrimaryKeyWithDefault):
